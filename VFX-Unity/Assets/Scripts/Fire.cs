@@ -1,7 +1,7 @@
 /***
  * Author: Akram Taghavi-Burris
  * Created: 10-30-22
- * Modified:
+ * Modified: 11-2-22
  * Description: Controls fire effects
  ***/
 
@@ -16,7 +16,7 @@ public class Fire : MonoBehaviour
     public ParticleSystem sparksParticleSystem;
     public ParticleSystem smokeParticleSystem;
     public float fireFadeDelay = 1;
-    public Weather weatherSystem;
+    public WeatherSys weatherSystem;
     AudioSource audioSrc;
     bool isFireOut = false;
 
@@ -30,7 +30,7 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(weatherSystem.IsRaining);
+        //Debug.Log(weatherSystem.IsRaining);
 
         if (weatherSystem.IsRaining)
         {
